@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCAE27"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <ImageView
+        android:id="@+id/dynamic_img"
+        android:layout_width="326dp"
+        android:layout_height="499dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_degree"
+        app:srcCompat="@drawable/dynamic_compass_img" />
+
+    <ImageView
+        android:id="@+id/static_img"
+        android:layout_width="328dp"
+        android:layout_height="501dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dynamic_img"
+        app:layout_constraintEnd_toEndOf="@+id/dynamic_img"
+        app:layout_constraintStart_toStartOf="@+id/dynamic_img"
+        app:layout_constraintTop_toTopOf="@+id/dynamic_img"
+        app:srcCompat="@drawable/static_compass_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
